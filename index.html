@@ -1,0 +1,961 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>
+Aranya
+</title>
+<script type="text/javascript">
+    if (navigator.userAgent.indexOf('MSIE') !=-1)
+    {
+        // Using IE
+window.location = "ieredirect.html"
+    }
+</script>
+<script>
+function init() {
+
+    test=true;
+    c=0;
+    obj=document.getElementById('headbar')
+onscroll=function(){
+ 
+/*@cc_on!@*/false?x=document.body.parentNode.scrollTop:x=pageYOffset;
+ 
+if((x>600)&&(test==true)) {
+    test=false;
+    c=0;
+    obj.className='';
+    showHeader();
+    }
+if((x<600)&&(test==false)) {
+    test=true;
+    c=100;
+    showHeader();
+    }
+   }
+  }
+function showHeader() {
+    test==true?c--:c++;
+if((c>100)||(c<0)){
+    return;
+  }
+if(obj.filters){
+   obj.style.filter='alpha(opacity='+c+')';
+ }
+else {
+    obj.style.opacity=c/100;
+ }
+    setTimeout(function(){showHeader();},5);
+ }
+ 
+    window.addEventListener?
+    window.addEventListener('load',init,false):
+    window.attachEvent('onload',init);
+</script>
+<link rel="icon" type="image/png" href="images/icon.png" />
+<link href='http://fonts.googleapis.com/css?family=Istok+Web' rel='stylesheet' type='text/css'>
+
+<link href='http://fonts.googleapis.com/css?family=Titillium+Web:400,900' rel='stylesheet' type='text/css'>
+
+<link rel="stylesheet" type="text/css" href="css/main.css" />
+<link rel="stylesheet" type="text/css" href="css/mainmenu.css" />
+<link rel="stylesheet" type="text/css" href="css/eventmenu.css" />
+<link rel="stylesheet" href="css/jquery.cluetip.css" type="text/css" />
+<link rel="stylesheet" href="css/demo.css">
+<link rel="stylesheet" href="css/forkit.css">
+<script src="library/jquery-1.8.1.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="library/jquery.cluetip.js" type="text/javascript"></script>
+<script src='jquery.divslideshow-1.1-min.js' type='text/javascript'></script>
+		<script type="text/javascript" charset="utf-8">
+			$(document).ready(function() {
+		       $(".wrap a").bind("click",function(event){
+		           event.preventDefault();
+		           var target = $(this).attr("href");
+		           $("html, body").stop().animate({
+		               scrollLeft: $(target).offset().left,
+					   scrollTop: $(target).offset().top
+		           }, 800);
+		       });
+			});
+		</script>
+		<script>
+		$(function(){
+	var bh = $(window).height();
+	$('div.panel').height(bh);
+})
+$(window).resize(function(){
+	var bh = $(window).height();
+	$('div.panel').height(bh);
+})
+</script>
+<script>
+function home()
+{
+document.getElementById("title").innerHTML="home";
+}
+function events()
+{
+document.getElementById("title").innerHTML="events";
+}
+function csr()
+{
+document.getElementById("title").innerHTML="corporate";
+}
+function ws()
+{
+document.getElementById("title").innerHTML="workshops";
+}
+function sponsors()
+{
+document.getElementById("title").innerHTML="sponsors";
+}
+function contact()
+{
+document.getElementById("title").innerHTML="contact us";
+}
+</script>
+<script>
+function home_s()
+{
+document.getElementById("leaf").innerHTML="<img src='images/homestick.png'>";
+}
+function events_s()
+{
+document.getElementById("leaf").innerHTML="<img src='images/eventsstick.png'>";
+}
+function csr_s()
+{
+document.getElementById("leaf").innerHTML="<img src='images/csrstick.png'>";
+}
+function ws_s()
+{
+document.getElementById("leaf").innerHTML="<img src='images/workstick.png'>";
+}
+function sponsors_s()
+{
+document.getElementById("leaf").innerHTML="<img src='images/sponstick.png'>";
+}
+function contact_s()
+{
+document.getElementById("leaf").innerHTML="<img src='images/contactstick.png'>";
+}
+</script>
+<script type="text/javascript">
+$(document).ready(function() {
+  $('ul.detail a').cluetip({activation: 'click',width: 650,height: 500,arrows: true, sticky: true, cluetipClass: 'rounded', showTitle: true,waitImage: true,closeText: '<img src="images/cross.png" alt="" />',closePosition: 'title',dropShadow: true});
+});
+</script>
+<script>
+function sent(){
+window.open("sent.html");
+}
+</script>
+</head>
+<body>
+<div id="headbar">
+<div id="logo">
+<img src="images/logo.png" width="240px" height="auto" id="logo">
+</div>
+<div id="title">
+
+</div>
+
+<div class="wrap">
+<nav class="main_menu">
+<ul class="mainmenu">
+<li><a onclick="home();home_s();" href="#home">Home</a></li> 
+<li><a onclick="events();events_s();" href="#events">Events</a></li>
+<li><a onclick="csr();csr_s();" href="#csr">CSR</a></li> 
+<li><a onclick="ws();ws_s();" href="#ws">Workshops</a></li> 
+<li><a onclick="sponsors();sponsors_s();" href="#sponsors">Sponsors</a></li> 
+<li><a onclick="contact();contact_s();" href="#contact">Contact us</a></li>
+
+</ul>
+
+
+<div class="clearfix"></div>
+
+</nav>
+</div>
+<div id="leaf">
+<img src='images/homestick.png'>
+</div>
+</div>
+
+
+
+<div id="home" class="panel">
+<center><table><tr>
+<td>
+<br>
+<br>
+<div class="wrap" style="width:610px;margin-top:15px;">
+<nav class="main_menu" style="height:50px;border-radius: 6px;box-shadow: 0px 0px 4px 2px rgba(0,0,0,0.4);">
+<img src='images/homestick.png' style="float:left">
+<ul class="mainmenu">
+<li><a onclick="events();events_s();" href="#events">Events</a></li>
+<li><a onclick="csr();csr_s();" href="#csr">CSR</a></li> 
+<li><a onclick="ws();ws_s();" href="#ws">Workshops</a></li> 
+<li><a onclick="sponsors();sponsors_s();" href="#sponsors">Sponsors</a></li> 
+<li><a onclick="contact();contact_s();" href="#contact">Contact us</a></li>
+</ul>
+
+<div class="clearfix"></div>
+</nav>
+</div>
+</td>
+<td>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<img src="images/logo_main.png" width="450px">
+</td>
+</tr>
+</table>
+</center>
+<nav id="content" style="width:1140px;margin-top:0px;">
+<br>
+<br>
+<br>
+<table><tr>
+<td>
+<div id="stylebox">
+<img src="images/poster_main.png">
+</div>
+</td>
+<td width="20px"></td>
+<td>
+<h2>
+ARANYA'12<BR>22-25NOV
+</h2>
+<p>What's innovation if it adversely effects our mother earth,<br>
+what's development if it is not sustainable,<br>
+what's growth if it leads to annihilation .. !<br>
+This year Thapar University's technical fest "Aranya" goes green.<br>
+Where there will be development under the shades of mother earth.<br>
+<h2>LET'S REINVENT THINGS IN THE WAY NO ONE HAS.<BR>
+LET'S REINVENT IT THE GREEN WAY.</h2></p>
+
+</td>
+</tr>
+</table>
+</nav>
+</div>
+<div id="events" class="panel">
+<nav id="content">
+<div id="stylebox">
+<div style="float:left; display:block;">
+<img src="images/events.png">
+</div>
+<div>
+<h2>
+ARANYA'12<BR>EVENTS
+</h2>
+<p>
+At Aranya we celebrate excellence, excellence not just limited to the field of technology. The theme Arise Aspire Actuate & Accomplish depicts the veiled wishes of every individual. Why wait all the while to follow someone when it comes to your own dreams.
+</p>
+</div>
+</div>
+<br>
+<br>
+<br>
+<center>
+<table>
+<tr>
+<td align="center" style="border: 1px grey dashed;margin-left:30px;"><a href="#online"><img src="images/online.png"><br><h2>ONLINE EVENTS</h2></a></td>
+<td align="center" style="border: 1px grey dashed;margin-left:30px;"><a href="#technical"><img src="images/technical.png"><br><h2>TECHNICAL EVENTS</h2></a></td>
+<td align="center" style="border: 1px grey dashed;margin-left:30px;"><a href="#manage"><img src="images/manage.png"><br><h2>MANAGEMENT EVENTS</h2></a></td>
+</tr>
+</table>
+</center>
+<br><br>
+<div id="stylebox">
+<h2>FINE ARTS AND PHOTOGRAPHY SOCIETY (FAPS) - EVENTS</h2> 
+<ul>
+<li><a href="workshop_details/faps.docx" >Event Schedule</a></li>
+</ul>
+</div>
+<div id="online">
+<br><br><br><br><br><br>
+<div id="stylebox">
+<h2>ARANYA'12 ONLINE EVENTS LIVE NOW !</h2>
+<small><font color="black">Register now to participate !</font></small>
+<br>
+<br>
+<div style="float:left;width:50%;">
+<div style="float:left; display:block;">
+<img src="images/dalal.png">
+</div>
+<div>
+<h2>DALAL STREET</h2><small>Powered By <a href="http://openmarkets.in">openmarkets.in</a></small>
+<small><font color="black">
+Practicing the Golden Rules of stock marketing isnt a risk...its smart way of earning through smart investmemt.
+Dalal Street is a virtual stock trading game. Trading is facilitated by an electronic exchange running from our servers. The player accumulating maximum wealth is crowned the winner.
+</font></small>
+<center>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a target="_blank" href="http://openmarkets.in/app/register?refid=thapar" ><img src="images/register.png"></a>
+</center>
+</div>
+</div>
+<div>
+<div style="float:left; display:block;">
+<img src="images/pirateflag.png">
+</div>
+<div>
+<h2>CYBER PIRATES</h2><small>Finals on November 23rd</small>
+<small><font color="black">Cyber Pirates is back with better challenges and more of the crazy puzzles! The event is a test of logic and application and requires practically no prior expert knowledge. The teams will have
+To be conducted in 2 stages - one beginning two weeks before the event on Aranya's Website and and another and oncampus event.
+</font></small>
+<center>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a target="_blank" href="http://www.aranyatechfest.in/cp/" ><img src="images/register.png"></a>
+</center>
+</div>
+</div>
+</div>
+</div>
+<div id="technical">
+<br>
+<div id="stylebox" style="margin-top:150px;" >
+<h2>TECHNICAL EVENTS</h2>
+<p>Select the branch to view events</p>
+
+
+<nav id="eventnav">
+<div class="event-menu">
+<h2>BIOTECHNICALS</h2>
+<ul class="detail">
+<li><a  target="_blank"  rel="events/bio/biohunt.html" >Bio Hunt</a></li>
+<li><a target="_blank"  rel="events/bio/bioabstracts.html" >Bio Abstracts</a></li>
+<li><a target="_blank" rel="events/bio/advocate.html">Devil’s Advocate</a></li>
+<li><a target="_blank" rel="events/bio/paradigm.html" >Bio-paradigm</a></li>
+<li><a target="_blank" rel="events/bio/quest.html" >Bio Quest</a></li>
+<li><a target="_blank" rel="events/bio/teepaint.html" >Tee Shirt Painting</a></li>
+<li><a target="_blank" rel="events/bio/scope.html" >Bio Scope</a></li>
+<li><a target="_blank" rel="events/bio/biowork.html" >Workshops</a></li>
+</ul>
+</div>
+
+<div class="event-menu">
+<h2>CHEMIZONE</h2>
+<ul class="detail">
+<li><a target="_blank" rel="events/chemical/chromania.html" >Chromania</a></li>
+<li><a target="_blank" rel="events/chemical/energice.html" >Energice</a></li>
+<li><a target="_blank" rel="events/chemical/ffactor.html" >F Factox</a></li>
+<li><a target="_blank" rel="events/chemical/indus.html" >Industrologic</a></li>
+<li><a target="_blank" rel="events/chemical/cc.html" >Crystal Clear</a></li>
+<li><a target="_blank" rel="events/chemical/synergy.html" >Synergy</a></li>
+<li><a target="_blank" rel="events/chemical/rope.html" >Rope Chem X</a></li>
+<li><a target="_blank" rel="events/chemical/organo.html" >Organo Models</a></li>
+</ul>
+</div>
+
+<div class="event-menu">
+<h2>CIVIL TECHNICALS</h2>
+<ul class="detail">
+<li><a target="_blank" rel="events/civil/autocad.html" >Autocad</a></li>
+<li><a target="_blank" rel="events/civil/bridge.html" >Bridge Breaking</a></li>
+<li><a target="_blank" rel="events/civil/conf.html" >Conference</a></li>
+<li><a target="_blank" rel="events/civil/quiz.html" >Conquiztador</a></li>
+<li><a target="_blank" rel="events/civil/fury.html" >Design Fury</a></li>
+<li><a target="_blank" rel="events/civil/stones.html" >Floating Stones</a></li>
+<li><a target="_blank" rel="events/civil/wpbridge.html" >West Point Bridge</a></li>
+<li><a target="_blank" rel="events/civil/wind.html" >Wind Thrust</a></li>
+</ul>
+</div>
+
+<div class="event-menu">
+<h2>COMPUTER TECHNICALS</h2>
+<ul class="detail">
+<li><a target="_blank" rel="events/comp/kc.html" >Knight Coders</a></li>
+<li><a target="_blank" rel="events/comp/cp.html" >Cyber Pirates</a></li>
+<li><a target="_blank" rel="events/comp/webd.html" >Web Designing Event</a></li>
+<li><a target="_blank" rel="events/comp/vw.html" >Virtual Warriors</a></li>
+<li><a target="_blank" rel="events/comp/thequiz.html" >The Quiz</a></li>
+<li><a target="_blank" rel="events/comp/bob.html" >Battle of Bytes : The Extempore / Group Discussion</a></li>
+<li><a target="_blank" rel="events/comp/rg.html" >Reverse Gear</a></li>
+<li><a target="_blank" rel="events/comp/swat.html" >Swat The Bug</a></li>
+<li><a target="_blank" rel="events/comp/paper.html" >Paper Presentation</a></li>
+<li><a target="_blank" rel="events/comp/network.html" >Networking Challenge</a></li>
+<li><a target="_blank" rel="events/comp/start.html" >Start me Up Challenge</a></li>
+</ul>
+</div>
+
+<div class="event-menu">
+<h2>ELECTRONICS & COMMUNICATION</h2>
+<ul class="detail">
+<li><a target="_blank" rel="events/ece/circuit.html" >Circuit Cascaders</a></li>
+<li><a target="_blank" rel="events/ece/equiz.html" >E-Quiz</a></li>
+<li><a target="_blank" rel="events/ece/reveng.html" >Reverse Engineering</a></li>
+<li><a target="_blank" rel="events/ece/roborash.html" >Roborash</a></li>
+<li><a target="_blank" rel="events/ece/line.html" >Line Follower</a></li>
+<li><a target="_blank" rel="events/ece/paper.html" >Paper Presentation</a></li>
+</ul>
+</div>
+
+<div class="event-menu">
+<h2>MECHANICAL TECHNICALS</h2>
+<ul class="detail">
+<li><a target="_blank" rel="events/mech/landrover.html" >Land Rover</a></li>
+<li><a target="_blank" rel="events/mech/roboso.html" >Robo-soccer</a></li>
+<li><a target="_blank" rel="events/mech/robowa.html" >Robo Wars</a></li>
+<li><a target="_blank" rel="events/mech/water.html" >Water Rocketry</a></li>
+<li><a target="_blank" rel="events/mech/tet.html" >Tetrix</a></li>
+<li><a target="_blank" rel="events/mech/soap.html" >Soap Cutting</a></li>
+<li><a target="_blank" rel="events/mech/alter.html" >Alternate Energy Model Making</a></li>
+</ul>
+</div>
+
+</nav>
+</div>
+</div>
+<br><br>
+<div id="stylebox">
+<div id="manage">
+<br><br><br><br><br>
+<center><h2><div id="stylebox">MANAGEMENT EVENTS</div></h2></center>
+<br><br>
+<h2>1.BUSINESS TYCOON</h2>
+<p>
+Being organized for the First time in Thapar University, Business Tycoon is an event to bring out the entrepreneurship skills in students. This event allows the students to use the campus and make a specific amount of money into something valuable. Teams have to earn money by making a specific product(s) and then selling it.   
+<br><br>
+If you have an idea, we have the money to support it.<br>
+The teams will use a starting amount of Rs. 200 and 6hours to multiply the amount.<br>
+In the end, the profit earned will be added to the prize money.<br>
+So basically, it is like playing on a NO LIMITS table. So you never know….</p>
+<center><a href="workshop_details/bt.docx" target="_blank"><img src="images/readmore.gif"></a></center>
+
+<br><br>
+
+<h2>2.Ad–IT</h2>
+<p>
+In 2007, spending on advertising was estimated at more than $150 billion in the United States and $385 billion worldwide, and the latter to exceed $450 billion by 2010. Big numbers, aren't they? We are pretty sure these numbers would have got you thinking. This is an excellent opportunity for creative minds!! Ad - IT is an advertising event to unleash your creative potential.</p>
+<center><a href="workshop_details/adit.docx" target="_blank"><img src="images/readmore.gif"></a></center>
+
+<br><br>
+
+<h2>3.BIZ PLAN</h2>
+<p>
+he business/venture should focus on product development based on technological innovation or a novel application of developed/well researched technology. Social Impact of such technology is also an area that could be explored by the participants.
+In brief if you are a techie with a business plan, don’t miss this chance.
+<br>
+Note that while the contest is referred to as a “Business Plan Contest,” it is really about the commercial merit of the proposed new venture. The judges evaluate the plans not as documents per se, but as visions for a potential new venture and, as such, focus on the idea, its potential for economic success and the likelihood of achieving that success based upon the team’s plan and experience. Naturally, the more concrete the plan – all else being equal – the better.
+</p>
+<center><a href="workshop_details/bplan.docx" target="_blank"><img src="images/readmore.gif"></a></center>
+
+<br><br>
+
+<h2>4.DALAL STREET</h2>
+<p>
+Practicing the Golden Rules of stock marketing isnt a risk...its smart way of earning through smart investmemt.
+Dalal Street is a virtual stock trading game. Trading is facilitated by an electronic exchange running from our servers. The player accumulating maximum wealth is crowned the winner.
+</p>
+<center><a href="workshop_details/dalalstreet.docx" target="_blank"><img src="images/readmore.gif"></a></center>
+
+</div>
+</div>
+
+</nav>
+</div>
+<div id="csr" class="panel">
+<nav id="content">
+<div id="stylebox">
+<div style="float:left;">
+<br>
+<h2>ARANYA'12 & CORPORATE SOCIAL RESPONSIBILITY</h2>
+<p>Aranya as a Brand Name have some responsibility towards its society.<br>
+We thrive to make Aranya more sustainable by focusing on social contract,<br>
+resource intensity and green innovation.<br>
+to that include conferences, guest lectures, youth drives, dome theatre and outreach programs,<br>
+cultural activities from handicapped children , the legacy of indian army, environment conservation etc. </p>
+<h2>THAT IS WHY THIS ARANYA we GO GREEN.</h2>
+</div>
+<div>
+<img src="images/csr.png"><br>
+</div>
+</div>
+<p>
+Ignite a new torch in mind through our theme initiatives to make the events lively, inspiring and enjoyable.
+</p>
+<div id="stylebox">
+<h2>MAIN EVENTS-</h2>
+<p><b>1.TAARE ZAMEEN PAR-</b> It is an event in which specially abled children, from various schools in Patiala and surrounding areas  will be performing different activities like group dance, skits, singing, mime act, mehandi, and much more.
+</p><p><b>2.PLANETARIUM DOME-</b>  The event comprises of an inflatable and portable dome theater in which movies would be shown using attractive technology, providing knowledge in a way which is both uniquely entertaining and a tantalizing visual treat. The dome theater shows will offer a thrilling and visually immersive environment to its viewers which will breathe a new life in how they perceive the wonders of the nature.
+
+The movies to be played in the theater are highly informative and will help the students to delve into the dynamics of nature. The description about some of the movies is given below :
+
+The Ultimate Universe: From the edge of space and time, through vast fields of wondrous galaxies, to the majesty of our solar system, this show will take audiences on a grand tour of the universe and let them experience its most provocative secrets.It is a three dimensional journey from the edge of the universe through space and time to reach our home planet, witnessing the major components of the cosmos along the way.
+
+Black Holes: It takes you on a journey through one of the most mystifying, awe-inspiring phenomena in the universe: a black hole. Where do they come from? Where do they go? How do we find them? Is there one on Earth's horizon? Using the latest in full-dome,3D animation visualization technology.
+
+</p><p><b>3.DRDO-</b> Defence Research & Development Organisation (DRDO) .DRDO dedicatedly working towards enhancing self-reliance in Defence Systems and undertakes design & development leading to production of world class weapon systems and equipment. In Thapar University they will be exhibiting their latest weapon technologies and developments.
+
+</p><p><b>4.NDRF-</b> The National Disaster Response Force (NDRF), established under the DM Act, 2005, is a specialist force which is gradually emerging as the most visible and vibrant multi-disciplinary, multi-skilled, high-tech force of the NDMA capable of dealing with all types of natural and man-made disasters. In Thapar University, they will be demonstrating a rescue operation via a helicopter.
+</p><p><b>5.GREEN TECH-</b>  Philosphy
+Green tech solutions is a programme, initiated by the students of Thapar University aimed at alleviating the social,economic and environmental  crisis facing the rural areas of Punjab by equipping it with the best technology from around the world. Dr.APJ Abdul Kalam,scientist and Former President of India , in his much acclaimed book ‘India 2020-A vision for the new millenium’ identified technological development and self reliance as ‘integral factors ‘in realizing India’s dreams of becoming a developed country.These ‘integral factors’ also constitute the guiding philosophy of  Green Tech solutions .We believe that for every disease plaguing the roots of Punjab,there is a technical solution possible and that solution,if implemented carefully with much delibration, will without exception,end up being the best solution. This programme aims to find those solutions,develop them further and  demonstrate their applicability in a real time environment.
+
+</p><p><b>6.HUG THE TREE-</b> To promote the GO GREEN theme of ARANYA’12, mascots dressed in tree outfit would be roaming around the campus.
+</p>
+<h2>PRE-ARANYA EVENTS</h2>
+<p><b>1.BLOOD DONATION-</b>  A blood donation camp will be organised under NSS in collaboration with Aranya CSR on the 20th November . This camp will be held under the supervision of the doctors from GIAN SAGAR Hospital. As seen from the past records, around 500 blood donors are expected.
+</p><p><b>2.T-SHIRT MAKING-</b> A competition for designing T-shirts emphasizing  the GO GREEN theme for Aranya’12 will be organised before the fest. The best T-shirt will be selected as the official T-shirt for Aranya’12.
+</p><p><b>3.TREE PLANTATION DRIVE-</b> Supporting the GO GREEN cause of Aranya’12, a tree plantation drive would be organised before the fest. 
+</p><p><b>4.EARTH HOUR-</b> There would be a complete blackout throughout the campus for 15 mins followed by a candlelight march.
+</p><p><b>5.WORKSHOPS AND STALLS-</b> Various workshops by different societies like AASHREYA and SYAHEE will be organised. These workshops will be dealing in lowering of CO2 emissions from refridgerators, ac’s  and paper recycling respectively.
+</p><p><b>6.SAVE WATER AND FOOD-</b> Save water stickers will be pasted on all taps in order to spread the awareness regarding water conservation. Similarly all mess workers would be wearing save food stickers on their shirts in order to spread awareness regarding food wastage.
+</p>
+<br>
+</div>
+<br><center>
+<h2>
+"GOODNESS IS THE ONLY INVESTMENT THAT NEVER FAILS"</h2><p>– Henry David Thoreau<p>
+<br><div id="stylebox">
+
+<p>To be a part of any of the above mentioned events, Please contact -<br><br>
+<b>Ankit Mangla - +91 84 3716 6800<br>
+Vivek Tiwari - +91 80 5406 2202</b>
+</center>
+</div>
+</nav>
+
+</div>
+<div id="ws" class="panel">
+<nav id="content">
+<div id="stylebox">
+<div style="float:left; display:block;">
+<img src="images/workshop.png">
+</div>
+<div >
+<h2>
+ARANYA'12<BR>WORKSHOPS
+</h2>
+<p>
+Get out of the classroom to see how things really happen.
+Workshops are the right platform to give you a head start in your areas of interest.
+Workshops are there to procure your general as well as overall development.
+All the Workshops are certified and would ultimately add to your CVs.</p>
+<h2>"I HAVE NEVER LET MY SCHOOLING INTERFERE WITH MY EDUCATION."</h2> <p>- Mark Twain</p>
+<br>
+</div>
+</div>
+<br>
+<br>
+<p>
+The following workshops will be organized during Aranya'12 - </p>
+<br>
+<div id="stylebox">
+<br>
+<h2>1. ACCELERO-BOTIX</h2><br>
+<p>( Hand Gesture Controlled Robot )</p>
+<br>
+<div style="float:left; display:block;">
+<img src="images/work_hand.png">
+</div>
+<div>
+<br>
+<br>
+<p>
+Accelero-Botix is a new approach to the Human Machine Interface. It is based on implementation of
+acceleration sensor for robotics, graphics and embedded application development. This technology is
+now most widely used in virtual reality, mobile phones, gaming solutions, animated movies etc.<br>
+Control the robot using your hand gestures. Learn to sense your hand gestures with accelerometers and flex sensors and program the robot to do what you show!</p>
+<a href="workshop_details/accelero_botix.docx" target="_blank"><img src="images/readmore.gif"></a>
+
+</div>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<h2>2. LEGO BOT WORKSHOP</h2><br><br>
+<div style="float:left; display:block;">
+<img src="images/legobot.png">
+</div>
+<div>
+<br>
+<br>
+<p>
+The LEGO Mind storm series of kits contain software and hardware to create small, customizable and programmable robots. They include a programmable 'Brick' computer that controls the system, a set of modular sensors and motors, and LEGO parts from the Technics line to create the mechanical systems.
+</p>
+
+<a href="workshop_details/legobot.docx" target="_blank"><img src="images/readmore.gif"></a>
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<h2>3. ANDROID WORKSHOP</h2><br><br>
+<div style="float:left; display:block;">
+<img src="images/android.png">
+</div>
+<div>
+<br>
+<br>
+<p>
+When people want to work parallel with the growing technology, learning the new technology is the primary step. To help all, This workshop which is based on Android operating system & its application development conceptualized by some top industry professionals. The main purpose is to teach students to be self-reliant and confident to build their own mobile application. This workshop will help them with understanding the Mobile software development ecosystem and opportunity to make their career in this booming Industry. The participants will be Officially Certified for their participation.
+</p>
+
+<a href="workshop_details/android.pdf" target="_blank"><img src="images/readmore.gif"></a>
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+
+<h2>4. CYBER SECURITIES AND ETHICAL HACKING WORKSHOP</h2><br><br>
+<div style="float:left; display:block;">
+<img src="images/hacker.png">
+</div>
+<div>
+<br>
+<br>
+<p>
+Ethical hacking is an important aspect in many national security agencies and corporate brands and is also a potential career opportunity. Hackers are assigned to prevent and curb any attempt to penetrate networks and/or computer systems using the same methods as a Hacker.
+<br>This workshop is specifically designed to provide the right knowledge to the aspiring Hacking and Information Security geeks. This workshop will explore various means and methods that an intruder exploits to gain access to computer resources.
+</p>
+
+<a href="workshop_details/hacking.docx" target="_blank"><img src="images/readmore.gif" ></a>
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<h2>5. CYBER CRIME INVESTIGATION AND CYBER FORENSICS WORKSHOP</h2><br><br>
+<div style="float:left; display:block;">
+<img src="images/cybercrime.png">
+</div>
+<div>
+<br>
+<br>
+<p>
+We all know that the need for security certifications is on the rise, but how many of us have considered the alternate aspect of computer security: cyber-crime. Computer crime represents one of the fastest growing crime rates in the country and the need for computer forensics is growing
+<br><br>This workshop will explore the various means that an intruder has available to gain access to computer resources. It will investigate weaknesses by discussing the theoretical background behind, and whenever possible, actually performing the attack.
+</p>
+
+<a href="workshop_details/cybercrime.pdf" target="_blank"><img src="images/readmore.gif"></a>
+
+</div>
+<br><br>
+<h2>6. RAVIOSA</h2><br>
+<p>( Salsa Workshop )</p>
+<br>
+<div style="float:left; display:block;">
+<img src="images/salsa.png">
+</div>
+<div>
+<br>
+<br>
+<p>
+If tapping your feet to foreign tunes is your hobby.. If you ever wanted to shake a leg & couldn’t find a reason.. If you ever felt like letting it all go & unleash yourself.. This is the Time. We provide you with an amazing platform to get trained by the renowned choreographer/dancer Mr. Akshay Singla!</p>
+<a href="workshop_details/salsa.pdf" target="_blank"><img src="images/readmore.gif"></a>
+<br>
+</div>
+</div>
+</nav>
+</div>
+<div id="sponsors" class="panel">
+<nav id="content">
+<center>
+<h2>OUR SPONSORS</h2><br><br>
+<div id="stylebox" style="width:450px;">
+<a target="_blank" href="http://www.iglonline.net/">
+<img src="images/sponsors/igl.gif"></div>
+<small>INDRAPRASTHA GAS LIMITED</small>
+</a>
+
+
+<br><br>
+<table>
+<tr>
+<td align="center">
+<div id="stylebox" style="width:310px;">
+<a target="_blank" href="http://www.rahifoundation.org/">
+<img src="images/sponsors/rahi.png"></div>
+<small>RAHI FOUNDATION</small>
+</a>
+</td>
+<td width="60px"></td>
+<td align="center">
+<div id="stylebox" style="width:310px;">
+<a target="_blank" href="http://www.secugenius.com/">
+<img src="images/sponsors/secu.png"></div>
+<small>SECUGENIUS</small>
+</a>
+</td>
+</tr>
+</table>
+
+<table>
+<tr>
+<td align="center">
+<div id="stylebox" style="width:310px;">
+<a target="_blank" href="http://www.shingora.net/">
+<img  src="images/sponsors/singora.png"></div>
+<small>SHINGORA SHAWLS</small>
+</a>
+</td>
+<td width="60px"></td>
+<td align="center">
+<div id="stylebox" style="width:310px;">
+<a target="_blank" href="http://www.abhimanu.com/">
+<img  src="images/sponsors/abhimanu.png"></div>
+<small>ABHIMANYU IAS STUDY</small>
+</a>
+</td>
+</tr>
+</table>
+
+<table>
+<tr>
+<td align="center">
+<div id="stylebox" style="width:310px;">
+<a target="_blank" href="http://www.niit.com/">
+<img src="images/sponsors/niit.png"></div>
+<small>NIIT</small>
+</a>
+</td>
+<td width="60px"></td>
+<td align="center">
+<div id="stylebox" style="width:310px;">
+<a target="_blank" href="http://www.hillsideacademy.in/">
+<img src="images/sponsors/side.png"></div>
+<small>HILLSIDE GROUP OF INSTITUTE</small>
+</a>
+</td>
+</tr>
+</table>
+
+<table>
+<td align="center">
+<div id="stylebox" style="width:310px;">
+<a target="_blank" href="http://www.ibibiosolutions.com/">
+<img src="images/sponsors/ibi.png"></div>
+<small>IBI BIOSOLUTIONS</small>
+</a>
+</td>
+<td width="60px"></td>
+<td align="center">
+<div id="stylebox" style="width:310px;">
+<img src="images/sponsors/chandi.jpg"></div>
+<small>CHANDI BATTERIES</small>
+</a>
+</td>
+</tr>
+</table>
+
+<table>
+<td align="center">
+<div id="stylebox" style="width:310px;">
+<img src="images/sponsors/mohan.jpg"></div>
+<small>HOTEL MOHAN CONTINENTAL</small>
+</a>
+</td>
+<td width="60px"></td>
+<td align="center">
+<div id="stylebox" style="width:310px;">
+<img src="images/sponsors/cafe64.jpg"></div>
+<small>CAFE' ROUTE 64</small>
+</a>
+</td>
+</tr>
+</table>
+
+<table>
+<td align="center">
+<div id="stylebox" style="width:310px;">
+<img src="images/sponsors/rj.jpg"></div>
+<small>RISHAB JEWELLERY</small>
+</a>
+</td>
+<td width="60px"></td>
+<td align="center">
+<div id="stylebox" style="width:310px;">
+<img src="images/sponsors/strikers.png"></div>
+<small>STRIKERS</small>
+</a>
+</td>
+</tr>
+</table>
+
+<table>
+<td align="center">
+<div id="stylebox" style="width:310px;">
+<img src="images/sponsors/dance.png"></div>
+<small>ROYAL DANCE ACADEMY</small>
+</a>
+</td>
+<td width="60px"></td>
+<td align="center">
+<div id="stylebox" style="width:310px;">
+<img src="images/sponsors/gbio.jpg"></div>
+<small>GBioFin</small>
+</a>
+</td>
+</tr>
+</table>
+
+<table>
+<td align="center">
+<div id="stylebox" style="width:310px;">
+<img src="images/sponsors/hyundai.jpg"></div>
+<small>HYUNDAI</small>
+</a>
+</td>
+<td width="60px"></td>
+<td align="center">
+<div id="stylebox" style="width:310px;">
+<img src="images/sponsors/sbop.png"></div>
+<small>STATE BANK OF PATIALA</small>
+</a>
+</td>
+</tr>
+</table>
+
+<table>
+<td align="center">
+<div id="stylebox" style="width:310px;">
+<img src="images/sponsors/army.png"></div>
+<small>INDIAN ARMY</small>
+</a>
+</td>
+</tr>
+</table>
+
+<table>
+<td align="center">
+<div id="stylebox" style="width:310px;">
+<img src="images/sponsors/edge.png"></div>
+<small>EDGE MAKERS</small>
+</a>
+</td>
+</tr>
+</table>
+
+<br>
+<h2>PRINTING PARTNER</h2><br><br>
+<table>
+<td align="center">
+<div id="stylebox" style="width:310px;">
+<a target="_blank" href="http://www.careerlauncher.com">
+<img src="images/sponsors/cl.png"></div>
+<small>CAREER LAUNCHER</small>
+</a>
+</td>
+</tr>
+</table>
+<br>
+
+<br>
+<h2>SOCIAL PARTNER</h2><br><br>
+<table>
+<td align="center">
+<div id="stylebox" style="width:310px;">
+<a target="_blank" href="http://www.petaindia.com/">
+<img src="images/sponsors/peta.png"></div>
+<small>PETA INDIA</small>
+</a>
+</td>
+</tr>
+</table>
+<br>
+<h2>RADIO PARTNER</h2><br><br>
+<table>
+<td align="center">
+<div id="stylebox" style="width:310px;">
+<a target="_blank" href="http://www.big927fm.com/">
+<img src="images/sponsors/radio.jpg"></div>
+<small>(ARANYA'12 RADIO PARTNER) 92.7 BIG FM</small>
+</a>
+</td>
+</tr>
+</table>
+
+</center>
+</nav>
+</div>
+<div id="contact" class="panel">
+<nav id="content"  style="margin-top:115px;width:950px;">
+
+
+<h2>MAIL US YOUR QUERY.</h2><p>We will respond to your inquiry as soon as possible.</p>
+<br><div id="mailus">
+
+<form onsubmit="sent()" name="contactform" action="/gdform.php" method="post">
+
+<table>
+<tr>
+<td>
+<p>Name </p><input type="text" name="nam">
+</td><td>
+<p>E-mail</p><input type="text" name="mail">
+</td>
+<td>
+<a href="brochure/brochure.pdf"><img src="images/dbro.png" width="150px"></a>
+
+</td>
+</tr>
+<tr>
+<td colspan="3">
+<p>Message</p>
+<textarea name="message" cols="60" rows="6"></textarea>
+</td>
+</tr>
+</table>
+<br>
+<center>
+<input type="submit" value="Submit">
+</center>
+</form>
+</div>
+<div>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<h2>HOW TO REACH?</h2><small>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Get Directions from the map.</small>
+<iframe style="border: 1px black dashed;margin-left:30px;"width="400" height="296" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" <iframe width="425" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" <iframe width="425" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.co.in/maps?f=d&amp;source=s_d&amp;saddr=Thapar+University,+Patiala,+Punjab&amp;daddr=&amp;hl=en&amp;geocode=&amp;aq=2&amp;oq=thapar+&amp;sll=30.351028,76.376009&amp;sspn=0.042366,0.084543&amp;mra=ls&amp;ie=UTF8&amp;ll=30.351028,76.376009&amp;spn=0.042366,0.084543&amp;t=m&amp;output=embed"></iframe>
+</div>
+</nav>
+</div>
+
+<div id="reg" class="forkit-curtain">
+			<div class="close-button"></div>
+			<img src="images/logo_reg.png">
+			<br>
+			Fill the form & submit to register for Aranya 2012.<br><br>
+			<center>
+			<form action="reg.php" method="post">
+			<table cellspacing="20px" style="border-width:1px;border-style:dotted;">
+			<tr><td>Name</td><td><input type="text" name="user"></td></tr>
+			<tr><td>College</td><td><input type="text" name="col"></td>
+			<td>ID No.</td><td><input type="text" name="id"></td></tr>
+			<tr><td>E-mail</td><td><input type="email" name="mail"></td>
+			<td>Phone</td><td><input type="text" name="mob" maxlength="10"></td></tr>
+			</table>
+			<input type="submit" value="Register">
+			</form>
+			</center>
+		</div>
+
+		<!-- The ribbon -->
+		<a class="forkit" data-text="Register Here" data-text-detached="Drag down >"<img style="position: absolute; top: 0; right: 0; border: 0; position: fixed;" src="https://a248.e.akamai.net/camo.github.com/e6bef7a091f5f3138b8cd40bc3e114258dd68ddf/687474703a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f7265645f6161303030302e706e67" alt="Register Here"></a>
+
+		<script src="library/forkit.js"></script>
+	
+
+
+
+<div id="footer_s">
+
+
+<a href="http://www.facebook.com/aranya2012"><img src="images/fb.png"></a>
+
+</div>
+
+
+</body>
+</html>

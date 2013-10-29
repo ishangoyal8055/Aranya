@@ -1,0 +1,28 @@
+<font color="black">
+<u>FLOATING STONES</u><br>
+
+Concrete sinks in water, is a general thought. But to an Engineer, things are certainly different. Design a floating concrete structure with the knacks of Archimedes and the tricks of VLFS and gain reputation in the most sought after event of the state..
+<br><u>Problem Statement:</u><br>
+Design a structure made of concrete that has a capability of floating under loads without any external aids.<br>
+<u>Design Specifications: 	</u><br>
+•	Concrete mix has to contain a definite proportion of sand and cement, mandatorily.<br>
+•	Use of any sort of admixtures and reinforcements, if required, is permitted.<br>
+•	The entire structure should fit in a box of size 50x30x30 cm3.<br>
+<u>Event Rules:</u><br>	
+•	A team can consist of a minimum of 3 members and a maximum of 4 members, necessarily from the same college.<br>
+•	General registration procedure applies..<br>
+•	Students should possess a valid identity card from their respective institutions to be eligible for participation.<br>
+•	A team once constituted cannot be altered on the course of the event.<br>
+<u>Testing scheme</u><br>
+o	The event will be held in two days<br>
+o	Day-1: participants have to cast their respective blocks in 1:5 hrs<br>
+o	Day-2: blocks constructed would be tested.<br>
+o	blocks will be allowed to float in water.<br>
+o	If it fails to do so than the time taken by the block to reach the bottom of the container will be noted.<br>
+o	If it floats in water than more load will be applied until it sinks. the block which holds maximum load will be the winner. <br><br>
+<br><br><center>To participate, Please contact:<br>
+Anshul Kadian
+(+91 99 8890 7477)<br>
+Abhimanyu Gorsi
+(+91 98 1661 8032)
+</font>

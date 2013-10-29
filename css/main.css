@@ -1,0 +1,147 @@
+
+body{
+margin:0px 0px;
+width:100%;
+height:100%;
+overflow:visible;
+}
+
+#headbar{
+width:100%;
+height:90px;
+position:absolute;
+position:fixed;
+margin-top:0px;
+margin-left:0px;
+box-shadow: 2px 5px 10px 1px #000000; 
+opacity:0;
+top:0;
+background:url('../images/12.jpg') top fixed; 
+	box-shadow: 0px 0px 4px 2px rgba(0,0,0,0.7);
+}
+#mainback{
+padding:30px;
+width:100%;
+}
+
+#logo{
+position:absolute;
+position:fixed;
+
+margin-left:15px;
+float:left;
+
+margin-top:1px;
+}
+
+#title{
+width:100%;
+font-family: 'Istok Web', sans-serif;
+color:#grey;
+font-size:70px;
+position:fixed;
+text-align:right;
+margin-top:0px;
+right:-30px;
+opacity:0.1;
+}
+.panel {
+background:url('../images/12.jpg') top fixed; 
+width:100%;
+height:100%;
+font-family: 'Istok Web', sans-serif;
+color:#FFFFFF;
+overflow-y:scroll;
+margin:0px auto;
+width:100%;
+}
+
+.panel h2{
+font-family: 'Titillium Web', sans-serif;
+color:#4D4D4D;
+
+}
+.panel p{
+font-family: 'Istok Web', sans-serif;
+font-size:16px;
+	color: #000;
+
+}
+.panel p b{
+font-family: 'Istok Web', sans-serif;
+font-size:16px;
+color:#FFFFFF;
+text-shadow: black 0.1em 0.1em 0.2em;
+
+}
+.panel a{
+color:grey;
+text-decooration:none;
+}
+.panel a:hover{
+color:black;
+text-decoration:none;
+}
+#footer{
+position:absolute;
+position:fixed;
+width:100%;
+height:55px;
+bottom:0;
+
+}
+#footer_s{
+position: absolute;
+position:fixed;
+bottom: 0;
+right:25px;
+margin-bottom:3px;
+margin-right:auto;
+
+}
+#footer_s img{
+opacity:0.7;
+}
+#footer_s img:hover{
+opacity:1;
+}
+#reg{
+position:absolute;
+position:fixed;
+}
+#reg{
+font-family: 'Istok Web', sans-serif;
+font-size:21px;
+}
+#content {
+margin:120px auto;
+width:1100px;
+}
+
+#contact{
+font-family: 'Istok Web', sans-serif;
+}
+#contact input{
+width:200px;
+height:30px;
+
+}
+
+
+#mailus{
+width:520px;
+border-radius: 6px;
+	box-shadow: 0px 0px 4px 2px rgba(0,0,0,0.4);
+	padding:10px;
+	float:left;
+}
+#leaf{
+position:fixed;
+right:100px;
+top:20px;
+}
+#stylebox{
+border-radius: 6px;
+	box-shadow: 0px 0px 4px 2px rgba(0,0,0,0.4);
+	padding:10px;
+}

@@ -1,0 +1,48 @@
+.clearfix {
+	clear: both;
+}
+
+.wrap {
+	width: 600px;
+	margin:20px auto;
+
+}
+
+.main_menu {
+
+	padding: 0 10px;
+	position: relative;
+	height:50px;
+}
+
+.mainmenu li {
+	float: left;
+	position: relative;
+	list-style:none;
+}
+
+.mainmenu li a {
+	color: #444;
+	display: block;
+font-family: 'Istok Web', sans-serif;
+font-size:14px;
+	line-height: 20px;
+	padding: 6px 12px;
+	margin: 8px 8px;
+	vertical-align: middle;
+	text-decoration: none;
+}
+
+.menumenu li a:hover {
+	
+	border-radius:12px;
+	box-shadow: inset 0px 0px 1px 1px rgba(0,0,0,0.1);
+	color: #222;
+	
+}
+.mainmenu li:hover a {
+	
+	border-radius: 6px;
+	box-shadow: inset 0px 0px 1px 1px rgba(0,0,0,0.1);
+	color: #222;
+}

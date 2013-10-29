@@ -1,0 +1,63 @@
+#eventnav {
+
+  line-height: 1.5;
+  margin:10px 100px;
+  width:400px;
+  overflow:hidden;
+}
+ 
+
+
+.event-menu h2 a {
+  color: white;
+  display: block;
+  text-decoration: none;
+
+}
+
+
+.event-menu ul {
+font-size:18px;
+font-family: 'Titillium Web', sans-serif;
+color:#ffffff;
+text-shadow: black 0.1em 0.1em 0.2em;
+
+  line-height: 30px;
+  list-style-type: none;
+  overflow: hidden;
+  padding: 0px;
+}
+ 
+.event-menu ul a {
+  font-family: 'Istok Web', sans-serif;
+  margin-left: 30px;
+  text-decoration: none;
+  color: #FFFFFF;
+  display: block;
+
+  
+}
+
+.event-menu li:hover {
+  cursor:pointer;
+
+text-decoration:underline;
+}
+.event-menu ul {
+  line-height: 30px;
+  height: 0px;
+  list-style-type: none;
+  overflow: hidden;
+  padding: 0px;
+ 
+  -webkit-transition: height 1s ease;
+     -moz-transition: height 1s ease;
+       -o-transition: height 1s ease;
+      -ms-transition: height 1s ease;
+          transition: height 1s ease;
+}
+.event-menu:hover ul {
+  height: 330px;
+  cursor:pointer;
+}
+
